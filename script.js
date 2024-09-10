@@ -132,8 +132,6 @@ function createGrid() {
       cellElement.classList.add(`text-${colors[cell.adjacentMines - 1]}-500`);
       return;
     }
-  
-    // ... (rest of the function remains the same)
   }
   
   // ... (rest of the code remains the same)
