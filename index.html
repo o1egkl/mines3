@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minesweeper</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+<body class="bg-gray-100 flex flex-col items-center pt-8">
+  <h1 class="text-3xl font-bold mb-4">Minesweeper</h1>
+  <div class="flex justify-center space-x-4 mb-4">
+  <p class="mb-4">Welcome to Minesweeper! Choose a difficulty level to start the game.</p>
+  </div>
+  <div class="flex justify-center space-x-4 mb-4">
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300" onclick="setDifficulty('easy')">Easy</button>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300" onclick="setDifficulty('medium')">Medium</button>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300" onclick="setDifficulty('hard')">Hard</button>
+  </div>
+
+  <div class="flex space-x-4 items-center mb-4">
+    <div>Time: <span id="timer" class="text-2xl">0</span></div>
+    <div>Mines: <span id="mine-counter" class="text-2xl"></span></div>
+  </div>
+
+  <div id="game-container" class="min-w-md aspect-square">
+    <div id="game-board" class="w-full h-full border-2 border-black"></div>
+  </div>  
+  
+  <footer class="bg-gray-200 text-center p-4 fixed bottom-0 w-full">
+    <p class="text-gray-600 text-sm">Minesweeper Game &copy; 2023</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
