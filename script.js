@@ -133,8 +133,7 @@ function createGrid() {
       return;
     }
   }
-  
-  // ... (rest of the code remains the same)
+
 
 // Place mines randomly
 function placeMines(startX, startY) {
